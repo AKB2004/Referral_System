@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Page</title>
+    <style>
+        body{
+            background: grey;
+            
+        }
+        .div1{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.882);
+            width: 450px;
+            height: 500px;
+            margin-left: 33%;
+            margin-top: -20px;
+            padding-left: 30px;
+            padding-top: 50px;
+            
+        }
+        input{
+            height: 40px;
+            width: auto;
+            border-color: rgba(128, 128, 128, 0.446);
+            border-radius: 10px;
+            font-size: 15px ;
+            margin-right: 30px;
+
+        }
+        label{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        button{
+            width: 160px;
+            height: 35px;
+            border-color: green;
+            border-radius: 10px;
+            background: rgb(73, 206, 73);
+            cursor: pointer;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-right: 40px;
+            margin-top: 30px;
+        }
+        button:hover{
+            background-color: green;
+            color: white;
+        }
+        p{
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>Login Cereditials</p>
+    <div class="div1">
+
+        <label for="">Name</label>
+        <input type="text" placeholder="Enter your name">
+        <label for="">Email</label>
+        <input type="text" placeholder="Enter your email">
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter the password">
+        <div style="display: flex; justify-content: center; align-items: center;">
+        <a href="Dashboard.html"><button class="Login">Login</button></a>
+    </div>
+    </div>
+</body>
+</html>

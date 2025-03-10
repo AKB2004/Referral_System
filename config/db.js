@@ -16,4 +16,4 @@ const mongoDBConnectionDB = async () => {
     }
 };
 
-module.exports = mongoDBConnection;
+module.exports = mongoDBConnectionDB;
