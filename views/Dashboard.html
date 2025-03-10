@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <title>Referral System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background:rgba(128, 128, 128, 0.637);
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: black;
+            color: white;
+        }
+        h2 {
+            margin: 0;
+            padding-right: 20px;
+        }
+        h3{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .div1 {
+            display: flex;
+            gap: 15px;
+        }
+        .div1 h4 {
+            margin: 0;
+        }
+        .welcome {
+            
+            margin-top: 20px;
+        }
+        .card{
+            height: 180px;
+            width: 400px;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .cardManage{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        .button1{
+            background: rgb(73, 206, 73);
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        tag{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: grey;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>Referral System</h2>
+        <aside>
+            <div class="div1">
+                <a href="Dashboard.html"><h4>Dashboard</h4></a>
+                <a href="Campaigns.html"><h4>Campaigns</h4></a>
+                <a href="Customeers.html"><h4>Customers</h4></a>
+                <a href="Analytics.html"><h4>Analytics</h4></a>
+            </div>
+        </aside>
+    </nav>
+    <div class="welcome">
+        <h1>Welcome Sam</h1>
+    </div>
+    <div class="cardManage">
+    <div class="card">
+        <h3>Total Campaigns</h3>
+        <tag>3</tag><br>
+        <a href="Campaigns.html"><button class="button1">View Campaigns</button></a>
+    </div>
+    <div class="card">
+        <h3>Total Referrers</h3>
+        <tag>28</tag><br>
+       <a href="Referrer.html"><button class="button1", style="background:rgb(27, 169, 226);">View Referrers</button></a> 
+    </div><div class="card">
+        <h3>Total Referrals</h3>
+        <tag>42</tag><br>
+        <a href="Referral.html"><button class="button1" , style="background-color: orange;">View Referrals</button>
+        </a>
+    </div>
+</div>
+<!-- 
+<div class="div2manage">
+    AI Assistant
+    <div class="div2">
+        
+    </div>
+</div> -->
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <title>Referrers | Referral System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: rgba(128, 128, 128, 0.637);
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: black;
+            color: white;
+        }
+        h2 {
+            margin: 0;
+            padding-right: 20px;
+        }
+        h3 {
+            text-align: center;
+        }
+        .div1 {
+            display: flex;
+            gap: 15px;
+        }
+        .div1 h4 {
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            color: grey;
+        }
+        .main-container {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .button1 {
+            background: rgb(73, 206, 73);
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+        .search-bar {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            height: 40px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            width: 300px;
+            padding: 0 10px;
+            margin-right: 10px;
+        }
+        .search-button {
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 0 15px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .active {
+            background-color: #e6f7e6;
+            color: #28a745;
+        }
+        .pending {
+            background-color: #fff3cd;
+            color: #ffc107;
+        }
+        .action-buttons button {
+            margin-right: 5px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .view-button {
+            background-color: #17a2b8;
+            color: white;
+        }
+        .edit-button {
+            background-color: #ffc107;
+            color: white;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .pagination button {
+            margin: 0 5px;
+            padding: 8px 15px;
+            border: 1px solid #ddd;
+            background-color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .pagination button.active {
+            background-color: rgb(73, 206, 73);
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>Referral System</h2>
+        <aside>
+            <div class="div1">
+                <a href="Dashboard.html"><h4>Dashboard</h4></a>
+                <a href="Campaigns.html"><h4>Campaigns</h4></a>
+                <a href="Customeers.html"><h4>Customers</h4></a>
+                <a href="Analytics.html"><h4>Analytics</h4></a>
+            </div>
+        </aside>
+    </nav>
+
+    <div class="main-container">
+        <div class="header-section">
+            <h2>Referrers</h2>
+            <button class="button1">Add New Referrer</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search referrers...">
+            <button class="search-button">Search</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Signup Date</th>
+                    <th>Campaign</th>
+                    <th>Referrals</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Smith</td>
+                    <td>john.smith@example.com</td>
+                    <td>Mar 5, 2025</td>
+                    <td>Spring Promotion 2025</td>
+                    <td>5</td>
+                    <td><span class="status active">Active</span></td>
+                    <td class="action-buttons">
+                        <button class="view-button">View</button>
+                        <button class="edit-button">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sarah Johnson</td>
+                    <td>sarah.j@example.com</td>
+                    <td>Mar 3, 2025</td>
+                    <td>Spring Promotion 2025</td>
+                    <td>8</td>
+                    <td><span class="status active">Active</span></td>
+                    <td class="action-buttons">
+                        <button class="view-button">View</button>
+                        <button class="edit-button">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Michael Brown</td>
+                    <td>mbrown@example.com</td>
+                    <td>Mar 1, 2025</td>
+                    <td>Winter Sale 2025</td>
+                    <td>3</td>
+                    <td><span class="status active">Active</span></td>
+                    <td class="action-buttons">
+                        <button class="view-button">View</button>
+                        <button class="edit-button">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Emily Davis</td>
+                    <td>emily.d@example.com</td>
+                    <td>Feb 28, 2025</td>
+                    <td>Winter Sale 2025</td>
+                    <td>0</td>
+                    <td><span class="status pending">Pending</span></td>
+                    <td class="action-buttons">
+                        <button class="view-button">View</button>
+                        <button class="edit-button">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Robert Wilson</td>
+                    <td>rwilson@example.com</td>
+                    <td>Feb 25, 2025</td>
+                    <td>Winter Sale 2025</td>
+                    <td>12</td>
+                    <td><span class="status active">Active</span></td>
+                    <td class="action-buttons">
+                        <button class="view-button">View</button>
+                        <button class="edit-button">Edit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <button>Previous</button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>Next</button>
+        </div>
+    </div>
+</body>
+</html>
